@@ -3,10 +3,10 @@
 	<types>
 		<members>Contact.UpdateFNIfBlank__c</members>
 		<name>CustomField</name>
-	</types>
-	<types>
-		<members>Contact.CheckPhoneOrEmailAvailable</members>
+    <members>Contact.CheckPhoneOrEmailAvailable</members>
 		<name>ValidationRule</name>
+		<members>*</members>
+		<name>ApexTrigger</name>
 	</types>
 	<version>55.0</version>
 </Package>
