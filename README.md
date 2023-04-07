@@ -1,18 +1,25 @@
-# Salesforce DX Project: Next Steps
+Users : 
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+user-1
+user-2
 
-## How Do You Plan to Deploy Your Changes?
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Branches :
 
-## Configure Your Salesforce DX Project
+Main
+QA
+U-001
+U-002
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
 
-## Read All About It
+Orgs :
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+creativefox(Trailhead org) - Assumed as a QA
+sfdx-deployments(Scratch org) - User by user-1 and user-2
+
+
+Description : 
+
+user-1 implemented Trigger and pushed it into U-001 - Used sfdx-deployments(Scratch org)
+user-2 implemented Validation rule & custom formula field and pushed into U-002 - Used sfdx-deployments(Scratch org)
+U-001 and U-002 merged with QA branch - QA is creativefox(Trailhead org)
