@@ -1,7 +1,7 @@
 trigger CheckContactHasAccount on Contact (before delete) {
     for(Contact C : Trigger.Old){
         if(C.AccountId!=null){
-            C.addError('Contact with active account cannot be deleted');
+            C.addError('Contact with active account cannot be deleted.');
         }
     }
 }
